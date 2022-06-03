@@ -41,22 +41,22 @@
                                 @csrf
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        <input type="text" class="form-control form-control-user" id="name"
                                             placeholder="Username" name="name">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        <input type="email" class="form-control form-control-user" id="email"
                                         placeholder="Email Address" name="email">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password" name="password">
+                                            id="password" placeholder="password" name="password">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password" name="password_confirmation">
+                                            id="password_confirmation" placeholder="Repeat Password" name="password_confirmation">
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-user btn-block">

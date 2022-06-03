@@ -43,7 +43,7 @@
                         <div class="p-6">
                             <div class="ml-12">
                                 <div class=" text-gray-600 dark:text-gray-400 text-sm text-center">
-                                    <h1>SELAMAT DATANG DI E SHOP</h1>
+                                    <h1>SELAMAT DATANG DI E CLOTHES</h1>
                                     <h3>SILAHKAN LOGIN/REGISTER</h3>
                                 </div>
                             </div>

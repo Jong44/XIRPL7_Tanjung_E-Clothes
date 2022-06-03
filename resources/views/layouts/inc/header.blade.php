@@ -31,7 +31,7 @@
                 <div class="col-lg-2 col-md-2 col-12">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="{{'home'}}"><img src="images/logo.png" alt="logo"></a>
+                        <a href="{{'home'}}"><h3>E CLOTHES</h3></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->
@@ -85,22 +85,22 @@
                                     @endif
                                     <a href="{{url('check_out')}}">Lihat Keranjang</a>
                                 </div>
-                                @foreach ($pesanan_details as $pesanan_detail)
+                               
                                 <ul class="shopping-list">
-                                    
+                                    @foreach ($pesanan_details as $pesanan_detail)
                                     <li>
                                         <form action="{{url('home')}}/{{$pesanan_detail->id}}" method="post">  
                                             @csrf
                                             {{ method_field('DELETE')}}
-                                        <button type="submit" class="remove" title="Remove this item"><i class="fa fa-remove" onclick="return confirm('Anda yakin akan menghapus pesanan anda?');></i></button>
+                                        <button type="submit" class="remove" title="Remove this item"><i class="fa fa-remove" onclick="return confirm('Anda yakin akan menghapus pesanan anda?');"></i></button>
                                         </form>
                                         <a class="cart-img" href="#"><img src="{{url('images/barang')}}/{{$pesanan_detail->barang->image}}" alt="#"></a>
                                         <h4><a href="#">{{$pesanan_detail->barang->nama_barang}}</a></h4>
                                         <p class="quantity">{{$pesanan_detail->harga}} - <span class="amount">{{$pesanan_detail->jumlah_harga}}</span></p>
                                     </li>
-                                   
+                                    @endforeach
                                 </ul>
-                                @endforeach
+                                
                                 <div class="bottom">
                                     <a href="{{url('konfirmasi_check_out')}}" class="btn animate" onclick="return confirm('Anda yakin akan check out pesanan anda?');">Checkout</a>
                                 </div>

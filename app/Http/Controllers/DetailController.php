@@ -90,7 +90,7 @@ class DetailController extends Controller
        $pesanan->update();
 
 
-        Alert::success('Pesanan berhasil di masukkan keranjang', 'Berhasil');
+        Alert::success('Berhasil', 'Pesanan berhasil di masukkan keranjang');
         return redirect('check_out');
 
     }
@@ -151,7 +151,7 @@ class DetailController extends Controller
             $barangs->update();
         }
 
-        Alert::success('Sukses','Pesanan berhasil dihapus');
+        Alert::success('Sukses','Pesanan berhasil dicheck out');
         return redirect('home');
     }
 

@@ -24,8 +24,10 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
+                    @if(!empty($pesanan))
                     <h5>Berhasil!!!!</h5>
                     <p>Pesanan anda sudah sukses dicheck out selanjutnya silahkan untuk melakukan pembayaran transfer ke rekening <strong>Bank BCI dengan Nomer Rekening : 1234-1234-2123</strong> sebesar  : <strong>Rp. {{ number_format($pesanan->kode+$pesanan->jumlah_harga) }}</strong></p>
+                    @endif
                 </div>
             </div>
             <br>

@@ -34,7 +34,12 @@ class HistoryController extends Controller
     public function detail($id)
     {
         $pesanan = Pesanan::where('id', $id)->first();
-    	$pesanan_details = Pesanan_detail::where('pesanan_id', $pesanan->id)->get();
+    	$pesanan_details = [];
+        if(!empty($pesanan))
+        {
+            $pesanan_details = Pesanan_detail::where('pesanan_id', $pesanan->id)->get();
+
+        }
 
      	return view('riwayat.detail', compact('pesanan','pesanan_details'));
     }

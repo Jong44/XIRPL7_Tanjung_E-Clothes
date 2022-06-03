@@ -34,15 +34,15 @@
 												<div class="single-product">
 													<div class="product-img">
 														<a href="{{url('detail')}}/{{$barangs->id}}">
-															<img class="default-img" src="{{url('images/barang')}}/{{$barangs->image}}" alt="{{$barangs->nama}}">
-															<img class="hover-img" src="{{url('images/barang')}}/{{$barangs->image}}" alt="{{$barangs->nama}}">
+															<img class="default-img" src="{{url('images/barang')}}/{{$barangs->image}}" width="300px" alt="{{$barangs->nama}}">
+															<img class="hover-img" src="{{url('images/barang')}}/{{$barangs->image}}" width="300px" alt="{{$barangs->nama}}">
 														</a>
 														<div class="button-head">
 															<div class="product-action">
 																<a data-toggle="modal" data-target="#exampleModal" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
 															</div>
 															<div class="product-action-2">
-																<a title="Add to cart" href="">Add to cart</a>
+																<a title="Add to cart" href="">Details</a>
 															</div>
 														</div>
 													</div>
@@ -229,7 +229,7 @@
 										<!--/ End Input Order -->
 									</div>
 									<div class="add-to-cart">
-										<a href="#" class="btn">Add to cart</a>
+										<a href="#" class="btn">Details</a>
 										<a href="#" class="btn min"><i class="ti-heart"></i></a>
 										<a href="#" class="btn min"><i class="fa fa-compress"></i></a>
 									</div>
